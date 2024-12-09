@@ -2,13 +2,12 @@
 :root {
   margin: 0;
   box-sizing: border-box;
-  height: 100%;
 }
 
 .charts {
-  height: calc(100vh - 10rem);
-  // height: inherit;
+  margin: 1rem;
+  height: calc(100vh - 10.25rem);
   background-color: cornsilk;
   padding: 2rem;
-  border-radius: 3px;
+  border-radius: 10px;
 }

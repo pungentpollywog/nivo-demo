@@ -78,10 +78,12 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className='charts'>
+    <>
       <h2>Doctors by Specialty</h2>
-      <BarChart data={tempData} keys={SPECIALTIES} />
-    </div>
+      <div className="charts">
+        <BarChart data={tempData} keys={SPECIALTIES} />
+      </div>
+    </>
   );
 }
 
