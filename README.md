@@ -21,3 +21,10 @@
   
 }
 ```
+
+## Nivo Docs 
+
+https://nivo.rocks/bar/
+
+https://codesandbox.io/p/sandbox/new-el3mg?file=%2Fsrc%2Findex.js
+
