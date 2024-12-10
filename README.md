@@ -8,17 +8,51 @@
   total: {
     $sum: 1
   },
-
   male: {
-    $sum: {$cond: [ {$eq: ["$gender", "Male"]}, 1, 0]}
+    $sum: {
+      $cond: [
+        {
+          $eq: ["$gender", "Male"]
+        },
+        1,
+        0
+      ]
+    }
   },
   female: {
-    $sum: {$cond: [ {$eq: ["$gender", "Female"]}, 1, 0]}
+    $sum: {
+      $cond: [
+        {
+          $eq: ["$gender", "Female"]
+        },
+        1,
+        0
+      ]
+    }
   },
-  // other: {
-  //   $sum: {$cond: [ {$not: { {$in: ["$gender", ["Male", "Female"]]}}, 1, 0]}
-  // }
-  
+  other: {
+    $sum: {
+      $cond: [
+        {
+          $not: {
+            $in: ["$gender", ["Male", "Female"]]
+          }
+        },
+        1,
+        0
+      ]
+    }
+  }
+}
+
+{
+  _id: "$specialty",
+  value: {
+    $sum: 1
+  },
+  label: {
+    $first: "$specialty"
+  }
 }
 ```
 ## Installing Nivo component modules 
