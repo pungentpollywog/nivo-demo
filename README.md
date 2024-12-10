@@ -21,6 +21,11 @@
   
 }
 ```
+## Installing Nivo component modules 
+
+```bash
+ npm install @nivo/core @nivo/bar --registry http://npm.perseverenow.org/ppm/
+```
 
 ## Nivo Docs 
 
