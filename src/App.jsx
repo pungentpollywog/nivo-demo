@@ -1,6 +1,7 @@
-import { useState } from 'react';
+
 import BarChart from './components/BarChart';
 import { SPECIALTIES } from './constants/specialties';
+
 import './App.scss';
 
 const tempData = [
@@ -75,11 +76,11 @@ const tempData = [
 ];
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <h2>Doctors by Specialty</h2>
+      <h1>Nevo Rocks chart demo</h1>
+      <h2>Doctor Specialties</h2>
       <div className="charts">
         <BarChart data={tempData} keys={SPECIALTIES} />
       </div>
