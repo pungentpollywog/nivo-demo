@@ -78,13 +78,13 @@ const tempData = [
 function App() {
 
   return (
-    <>
+    <main>
       <h1>Nevo Rocks chart demo</h1>
       <h2>Doctor Specialties</h2>
       <div className="charts">
         <BarChart data={tempData} keys={SPECIALTIES} />
       </div>
-    </>
+    </main>
   );
 }
 
